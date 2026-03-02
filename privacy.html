@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integritetspolicy – Lägesbild</title>
+  <meta name="description" content="Integritetspolicy för Lägesbild-appen. Vi samlar ingen personlig data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #000; color: #fff; line-height: 1.7;
+    }
+    a { color: #00D4AA; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .aurora-bg {
+      position: fixed; inset: 0; z-index: -1; overflow: hidden;
+    }
+    .aurora-bg::before, .aurora-bg::after {
+      content: ''; position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.3;
+    }
+    .aurora-bg::before {
+      width: 600px; height: 600px; top: -200px; left: -100px;
+      background: radial-gradient(circle, #00D4AA33, #667EEA22, transparent);
+    }
+    .aurora-bg::after {
+      width: 800px; height: 800px; bottom: -300px; right: -200px;
+      background: radial-gradient(circle, #667EEA33, #00D4AA22, transparent);
+    }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      background: rgba(0,0,0,0.8); border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .nav-inner {
+      max-width: 800px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between; height: 64px;
+    }
+    .nav-logo {
+      font-size: 20px; font-weight: 800; letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #00D4AA, #667EEA);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .nav-back { color: rgba(255,255,255,0.65); font-size: 14px; font-weight: 500; }
+
+    .content {
+      max-width: 800px; margin: 0 auto; padding: 120px 24px 80px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 42px); font-weight: 800; letter-spacing: -1px;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #00D4AA, #667EEA);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .subtitle { color: rgba(255,255,255,0.4); font-size: 14px; margin-bottom: 48px; }
+    h2 {
+      font-size: 22px; font-weight: 700; margin-top: 48px; margin-bottom: 16px;
+      color: #fff; letter-spacing: -0.3px;
+    }
+    p, li { color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 16px; }
+    ul { padding-left: 20px; margin-bottom: 16px; }
+    li { margin-bottom: 8px; }
+
+    .highlight-box {
+      background: rgba(0,212,170,0.08); border: 1px solid rgba(0,212,170,0.2);
+      border-radius: 12px; padding: 20px 24px; margin: 32px 0;
+    }
+    .highlight-box p { color: rgba(255,255,255,0.8); margin-bottom: 0; }
+    .highlight-box strong { color: #00D4AA; }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 32px 24px; text-align: center;
+      color: rgba(255,255,255,0.3); font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="aurora-bg"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="landing.html" class="nav-logo">⬡ Lägesbild</a>
+      <a href="landing.html" class="nav-back">← Tillbaka</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h1>Integritetspolicy</h1>
+    <p class="subtitle">Senast uppdaterad: 2 mars 2026</p>
+
+    <div class="highlight-box">
+      <p><strong>Sammanfattning:</strong> Lägesbild samlar inte in, lagrar eller delar någon personlig information. Appen använder inga trackers, inga annonser och ingen inloggning krävs.</p>
+    </div>
+
+    <h2>1. Om appen</h2>
+    <p>Lägesbild ("appen") utvecklas och tillhandahålls av KV konsult AB, org.nr 559XXXXXXX, Sverige. Appen samlar och visar öppna data från svenska myndigheter och offentliga källor i realtid.</p>
+
+    <h2>2. Vilken data samlar vi in?</h2>
+    <p><strong>Ingen personlig data.</strong> Vi samlar inte in, lagrar eller behandlar någon personlig information. Specifikt:</p>
+    <ul>
+      <li><strong>Ingen registrering eller inloggning</strong> – du kan använda appen direkt utan konto.</li>
+      <li><strong>Inga cookies eller trackers</strong> – vi använder inga analys- eller spårningsverktyg.</li>
+      <li><strong>Ingen annonsering</strong> – vi visar inga annonser och delar ingen data med annonsörer.</li>
+      <li><strong>Inga personliga identifierare</strong> – vi lagrar inga enhets-ID, IP-adresser eller liknande.</li>
+    </ul>
+
+    <h2>3. Platsdata</h2>
+    <p>Appen kan be om tillgång till din enhets platsdata för att visa relevant lokal information (polishändelser, väder, nyheter i ditt närområde). Denna data:</p>
+    <ul>
+      <li>Skickas <strong>enbart till vår API-server</strong> för att hämta relevant data.</li>
+      <li><strong>Lagras aldrig</strong> på våra servrar – den används bara för att besvara din förfrågan i realtid.</li>
+      <li>Delas <strong>aldrig med tredje part</strong>.</li>
+      <li>Du kan när som helst neka platstillgång i iOS-inställningarna. Appen fungerar fortfarande men visar data för en standardplats.</li>
+    </ul>
+
+    <h2>4. Datakällor</h2>
+    <p>Appen visar data från följande öppna och publika källor:</p>
+    <ul>
+      <li>Polisen (polisen.se) – Händelser i realtid</li>
+      <li>SMHI (smhi.se) – Väderdata och prognoser</li>
+      <li>Trafikverket (trafikverket.se) – Trafikincidenter och störningar</li>
+      <li>GDELT Project – Nyheter från svenska och internationella medier</li>
+      <li>Yahoo Finance – Marknadsdata (publikt tillgänglig)</li>
+      <li>OpenStreetMap/OSRM – Ruttplanering och geokodning</li>
+    </ul>
+    <p>Vi ansvarar inte för innehållet i dessa externa datakällor.</p>
+
+    <h2>5. Datalagring</h2>
+    <p>Appen lagrar viss data lokalt på din enhet:</p>
+    <ul>
+      <li><strong>Inställningar</strong> – dina valda platser, tema och aviseringspreferenser sparas på enheten.</li>
+      <li><strong>Cache</strong> – tillfällig cachelagring av data för bättre prestanda, rensas automatiskt.</li>
+    </ul>
+    <p>Ingen data synkroniseras till molnet eller till våra servrar.</p>
+
+    <h2>6. Tredjepartstjänster</h2>
+    <p>Appen använder Apple Maps för kartvisning. Apples egna villkor och integritetspolicy gäller för kartdata. Vi använder inga andra tredjepartstjänster som samlar persondata.</p>
+
+    <h2>7. Barns integritet</h2>
+    <p>Appen riktar sig inte specifikt till barn under 13 år. Vi samlar inte medvetet in information från barn. Eftersom appen inte kräver registrering och inte samlar persondata, finns det ingen risk att barndata samlas in.</p>
+
+    <h2>8. Ändringar</h2>
+    <p>Vi kan uppdatera denna integritetspolicy vid behov. Senaste versionen finns alltid tillgänglig på denna sida. Vid väsentliga ändringar informeras du via appen.</p>
+
+    <h2>9. Kontakt</h2>
+    <p>Om du har frågor om denna integritetspolicy eller om appen:</p>
+    <ul>
+      <li><strong>Företag:</strong> KV konsult AB</li>
+      <li><strong>E-post:</strong> <a href="mailto:Eric@kvkonsult.com">Eric@kvkonsult.com</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    © 2026 KV konsult AB. Alla rättigheter förbehållna.
+  </footer>
+</body>
+</html>
